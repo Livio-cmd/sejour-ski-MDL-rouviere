@@ -1,0 +1,51 @@
+@import './formats';
+@import './composants';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1c1c1c;
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapped {
+    max-width: calc(100% - 190px - 190px);
+}
+
+img {
+    display: block;
+    user-select: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    visibility: visible;
+    opacity: inherit;
+}

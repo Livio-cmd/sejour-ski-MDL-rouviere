@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDL Rouviere</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="hamburger" style="display: none;">
+    <label class="mobile col" for="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+    <img id="mobile-logo" class="mobile" src="./assets/svg/logo.svg" alt="Logo de la MDL">
+
+    <nav class="row active" >
+        <img draggable="false" id="logo" src="./assets/svg/logo.svg" alt="Logo du lycee rouviere">
+
+        <ul class="row">
+            <a onclick="closeNav()" href="#before" class="link">A propos</a>
+            <a onclick="closeNav()" href="#photos" class="link">Photos</a>
+            <a onclick="closeNav()" href="#contact" class="link">Contact</a>
+            <a onclick="closeNav()" href="./reserver.html" class="button red">Reserver</a>
+        </ul>
+    </nav>
+
+    <header>
+
+        <div class="overlay"></div>
+        <video autoplay muted loop id="myVideo">
+            <source id="header-video" src="./assets/videos/video-bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="container col">
+
+            <h1>Voyagez avec la MDL</h1>
+            <p>
+                Bienvenue sur le site du voyage au ski de la Maison des Lycéens ! Inscrivez-vous dès maintenant pour
+                vivre une aventure inoubliable de glisse et de convivialité. Retrouvez toutes les infos pratiques pour
+                profiter pleinement de cette sortie exceptionnel !
+            </p>
+            <a href="./reserver.html" class="button white">Réserver</a>
+
+        </div>
+
+    </header>
+
+    <main class="col">
+
+        <div id="main-container" class="wrapped">
+
+            <section id="tarifs">
+                <div class="container row">
+                    <div class="left"><img draggable="false" src="./assets/images/ski4.webp"
+                            alt="Image de deux personnes au ski"></div>
+                    <div class="right col">
+                        <h2>C'est pareil pour tous !</h2>
+                        <span>150€ / personne</span>
+                        <a href="./reserver.html" class="button red">Je veux y aller</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="before" class="col">
+
+                <img src="./assets/svg/mountains.svg" alt="" style="width: 150px;">
+                <h2 class="article-title">un séjour inoubliable</h2>
+
+                <p>
+                    Rejoignez-nous pour une aventure inoubliable au ski ! Les retours exceptionnels de l'année précédente
+                    témoignent des moments mémorables vécus par tous. Ce voyage est synonyme d'amusement à l'état pur,
+                    accessible à tous ceux qui savent skier en autonomie. Préparez-vous à glisser, à rire et à créer des
+                    souvenirs inoubliables en pleine montagne !
+                </p>
+
+                <ul class="row">
+                    <div class="col">
+                        <img src="./assets/svg/adventure.svg" alt="">
+                        <span>Vars</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/ski.svg" alt="">
+                        <span>Ski / Snow / Luge</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/people.svg" alt="">
+                        <span>Rencontres</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/safe.svg" alt="">
+                        <span>Sécurité</span>
+                    </div>
+                </ul>
+
+            </section>
+
+            <section id="photos" class="row">
+                <div class="column col">
+
+                    <img src="./assets/images/ski1.webp" alt="">
+                    <img src="./assets/images/ski2.webp" alt="">
+                    <img src="./assets/images/ski3.webp" alt="">
+
+                </div>
+                <div class="column col">
+
+                    <img src="./assets/images/ski4.webp" alt="">
+                    <img src="./assets/images/ski5.webp" alt="">
+                    <img src="./assets/images/ski6.webp" alt="">
+
+                </div>
+                <div class="column col">
+
+                    <img src="./assets/images/ski7.webp" alt="">
+                    <img src="./assets/images/ski8.webp" alt="">
+                    <img src="./assets/images/ski9.webp" alt="">
+
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container col">
+                    <h2>Nous contacter</h2>
+                    <ul class="row">
+                        <a target="_blank" href="https://www.instagram.com/m.d.l._rouviere/"><img src="./assets/svg/instagram.svg" alt=""></a>
+                        <a href="mailto:semeraro.livio@gmail.com"><img src="./assets/svg/gmail.svg" alt=""></a>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="team" class="col">
+                <h2>La team 2024 - 2025 !</h2>
+
+                    <div class="wrapped">
+                        <img src="./assets/images/team.webp" alt="Image de l'equipe du bureau de la MDL du lycee rouviere">
+                    </div>
+            </section>
+
+
+        </div>
+
+        <footer>
+            <div class="container row">
+
+                <div class="left col">
+                    <img src="./assets/svg/logo.svg" alt="Logo du la MDL">
+                    <span>© 2024-2025 par Semeraro Livio.</span>
+                </div>
+
+                <div class="right">
+                    <div class="row">
+                        <ul class="col">
+                            <a href="#before" class="link">A propos</a>
+                            <a href="#photos" class="link">Photos</a>
+                            <a href="#contact" class="link">Contact</a>
+                        </ul>
+                        <ul class="col">
+                            <a target="_blank" href="https://www.instagram.com/m.d.l._rouviere/" class="link">Instagram</a>
+                        </ul>
+
+                        <ul class="col">
+                            <a href="./reserver.html" class="button red">Réserver</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script type="text/javascript" src="./script.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8WDVE8G59Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8WDVE8G59Y');
+</script>
+
+</body>
+
+</html>

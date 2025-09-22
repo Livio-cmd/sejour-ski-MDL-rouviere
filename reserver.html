@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDL Rouviere Inscription au ski</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reserver.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="hamburger" style="display: none;">
+    <label class="mobile col" for="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+    <img id="mobile-logo" class="mobile" src="./assets/svg/logo.svg" alt="Logo de la MDL">
+
+    <nav class="row active">
+        <img draggable="false" id="logo" src="./assets/svg/logo.svg" alt="Logo du lycee rouviere">
+
+        <ul class="row">
+            <a onclick="closeNav()" href="./index.html#before" class="link">A propos</a>
+            <a onclick="closeNav()" href="./index.html#photos" class="link">Photos</a>
+            <a onclick="closeNav()" href="./index.html#contact" class="link">Contact</a>
+            <a style="color: white;" onclick="closeNav()" href="./index.html" class="button red">Accueil</a>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="wrapper col">
+
+            <h1 style="user-select: none;">Ton voyage commence ici !</h1>
+
+            <div class="warning row">
+                <img id="warning-circle" src="./assets/svg/warning.svg" alt="icon attention">
+                <p>
+                    Ce voyage au ski est réservé aux personnes <b>adhérentes</b> à la <b>MDL</b> et <b style="color: rgb(255, 41, 41);">autonomes</b> en ski. Les débutants ne seront pas encadrés !
+
+                </p>
+            </div>
+
+            <div class="container col">
+                <input id="prenom" type="text" class="text" autocomplete="off" autofocus placeholder="Ton prénom">
+
+                <input type="text" class="text" autocomplete="off" placeholder="Ton nom">
+
+                <div class="col">
+                    <p class="date">
+                        <b>Dossier à rendre le 8 et 9 Octobre a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b></b>
+
+                    </p>
+                    <a id="download-button" href="./assets/fichiers/fiche-ski.pdf" class="button red"
+                    download="inscription-ski-rouviere">
+                    Telecharger le dossier
+                    <img src="./assets/svg/download.svg" alt="Icon de telechargement">
+                </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="./script.js" defer></script>
+
+    <script type="text/javascript" defer>
+        const nav = document.querySelector('nav');
+        const main = document.querySelector('main');
+        const navLabel = document.querySelector('label');
+
+        const navHeight = nav.getBoundingClientRect().height;
+        const navLabelHeight = navLabel.getBoundingClientRect().height;
+
+        if ( (navHeight > 100) ){
+            main.style.marginTop = `${ navLabelHeight * 2 }px`;
+        }else{
+            main.style.marginTop = `${ navHeight * 2 }px`;
+        }
+
+
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8WDVE8G59Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8WDVE8G59Y');
+</script>
+
+</body>
+
+</html>

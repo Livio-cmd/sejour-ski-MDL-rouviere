@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$red: rgb(255, 41, 41);
+
+body {
+
+    *{
+        transition: all ease-in-out 250ms;
+    }
+
+    // Define base fonts
+    @mixin base-font{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    // Fonts used for titles
+    h1, h2, h3 {
+        @include base-font();
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 3vw;
+        letter-spacing: 0.2rem;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    h2.article-title {
+        margin-bottom: 2.5vw;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+        font-weight: 400
+
+    }
+
+    a, span, p, .button, .link {
+        @include base-font();
+        font-size: 17px;
+        width: fit-content;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    p {
+        line-height: 1.7rem;
+    }
+
+    a.white{
+        background-color: white;
+        color: #1c1c1c;
+        padding: 15px 44px;
+        outline: 1px solid transparent;
+        outline-offset: -1px;
+
+        &:hover {
+            outline-color: white;
+            color: white;
+            background-color: transparent;
+        }
+    }
+
+    a.dark, input.dark{
+        background-color: white;
+        color: #1c1c1c;
+        padding: 15px 44px;
+        outline: 1px solid #1c1c1c;
+        outline-offset: -1px;
+
+        &:hover {
+            outline-color: transparent;
+            color: white;
+            background-color: #1c1c1c;
+        }
+    }
+
+    a.red, button.red{
+        background-color: rgb(255, 41, 41);
+        // background-color: #ADCAF2;
+        color: #1c1c1c;
+        padding: 15px 44px;
+        outline: none;
+
+        &:hover {
+            background-color: rgba(255, 41, 41, 0.8);
+            // background-color: #ADCAF2aa;
+        }
+    }
+
+    .link {
+        &:hover {
+            color: $red;
+        }
+    }
+
+    // List format
+    ul {
+        list-style: none;
+        width: fit-content;
+        gap: 30px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

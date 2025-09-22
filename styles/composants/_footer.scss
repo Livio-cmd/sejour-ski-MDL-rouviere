@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    background-color: #1c1c1c;
+    position: relative;
+
+    * {
+        color: white;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    padding: 130px 10vw;
+
+    .col{
+        gap: 35px;
+    }
+
+    .row {
+        gap: 50px;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+}

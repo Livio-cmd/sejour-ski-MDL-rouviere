@@ -1,0 +1,191 @@
+@media only screen and (max-width: 800px) {
+
+    .mobile {
+        display: inherit !important;
+    }
+
+    .desktop {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+        .row {
+            flex-direction: column !important;
+        }
+
+        .wrapped {
+            max-width: 100vw !important;
+            padding: 0 10px;
+        }
+
+        h1 {
+            font-size: 8vw !important;
+        }
+
+        h2 {
+            font-size: 7vw !important;
+        }
+
+        h3 {
+            font-size: 3vw !important;
+        }
+
+        .link, .button, a, span, p {
+            font-size: 3.5vw !important;
+        }
+
+        nav {
+            padding: 10px  0 !important;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            align-items: center;
+            justify-content: space-evenly !important;
+
+            transform: translateX(-100%);
+
+            #logo{
+                position: relative !important;
+                transform: none !important;
+            }
+        }
+
+        header{
+            justify-content: center !important;
+            height: 100vh !important;
+            min-height: 100vh !important;
+
+            .container{
+                padding: 0 10px;
+            }
+
+
+            p{
+                max-width: none !important;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 4vw !important;
+                font-weight: 500;
+            }
+
+            h1{
+                text-align: center;
+            }
+        }
+
+        main {
+            margin-top: 10px;
+
+            .wrapped{
+                transform: translate(0) !important;
+            }
+
+            section{
+                padding-top: 100px !important;
+            }
+
+            #team{
+                width: 100% !important;
+                max-width: none !important;
+
+                padding: 0 !important;
+                margin: 0 !important;
+
+                h2 {
+                    padding: 100px 0 !important;
+                }
+
+                .team-list{
+                    align-items: center;
+                    padding: 0 !important;
+                }
+
+                .worker{
+                    width: 100% !important;
+                    min-width: none !important;
+                    max-width: none !important;
+
+                    flex-direction: row !important;
+
+                    padding: 10px !important;
+                    margin: 0 !important;
+
+                    .img-container{
+                        width: 100% !important;
+                        max-width: 100vw !important;
+                        height: fit-content !important;
+
+                        img{
+                            width: 60px !important;
+                            height: 60px !important;
+                            border-radius: 100%;
+                        }
+                    }
+
+                    .content{
+                        flex-direction: row !important;
+
+                        margin: 0 !important;
+                        padding: 0 !important;
+
+                        img {
+                            width: 30px !important;
+                        }
+                    }
+                }
+            }
+
+            #contact {
+                width: calc(100% + 20px);
+
+                margin-left: -10px;
+                padding: 80px !important;
+
+                margin-bottom: 0 !important;
+
+                .row { flex-direction: row !important; }
+
+                .col {
+                    gap: 30px !important;
+                }
+            }
+
+            #tarifs{
+                .left{
+                    width: 100% !important;
+                    img{
+                        width: 100%;
+                        max-height: none !important;
+                        height: 85vh !important;
+                        object-position: center;
+                    }
+
+                }
+
+                .right{
+                    padding: 40px 0 !important;
+                }
+            }
+        }
+
+        #before{
+            .row{
+                gap: 40px;
+            }
+
+            margin-bottom: 0 !important;
+        }
+
+        #photos{
+            max-width: none !important;
+            flex-direction: row !important;
+            margin-bottom: 100px !important;
+        }
+
+
+  }
+
+  footer {
+    margin-top: 200px;
+  }
