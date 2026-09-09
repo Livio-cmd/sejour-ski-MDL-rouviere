@@ -51,7 +51,7 @@
 
                 <div class="col">
                     <p class="date">
-                        <b>Dossier à rendre le 8 et 9 Octobre a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b></b>
+                        <b id="date">Dossier à rendre le [jour] et [jour] [mois] a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b></b>
 
                     </p>
                     <a id="download-button" href="./assets/fichiers/fiche-ski.pdf" class="button red"
@@ -66,14 +66,12 @@
 
     </main>
 
-    <script type="text/javascript" src="./script.js" defer></script>
-
     <script type="text/javascript" defer>
-        const nav = document.querySelector('nav');
+        const navBar = document.querySelector('nav');
         const main = document.querySelector('main');
         const navLabel = document.querySelector('label');
 
-        const navHeight = nav.getBoundingClientRect().height;
+        const navHeight = navBar.getBoundingClientRect().height;
         const navLabelHeight = navLabel.getBoundingClientRect().height;
 
         if ( (navHeight > 100) ){
@@ -84,6 +82,8 @@
 
 
     </script>
+
+    <script type="text/javascript" src="./script.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WDVE8G59Y"></script>
