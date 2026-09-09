@@ -65,5 +65,9 @@ const DATE = [12, 13, 'Decembre'];
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-document.querySelector('#tarifs span').innerHTML = `${PRIX}€ / personne`;
-document.querySelector('.date > b').innerHTML = `Dossier à rendre le ${DATE[0]} et ${DATE[1]} ${DATE[2]} a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b>`;
+try {
+    document.querySelector('#tarifs span').innerHTML = `${PRIX}€ / personne`;
+} catch (error) {
+    document.querySelector('.date > b').innerHTML = `Dossier à rendre le ${DATE[0]} et ${DATE[1]} ${DATE[2]} a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b>`;
+}
+
