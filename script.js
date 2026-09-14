@@ -61,13 +61,13 @@ const PRIX = 150
 
 
 // FORMAT DATE : [12, 13, 'Janvier', ]
-const DATE = [12, 13, 'Decembre'];
+const DATE = [8, 9, 'Octobre'];
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 try {
     document.querySelector('#tarifs span').innerHTML = `${PRIX}€ / personne`;
 } catch (error) {
-    document.querySelector('.date > b').innerHTML = `Dossier à rendre le ${DATE[0]} et ${DATE[1]} ${DATE[2]} a 10h <b style="color: rgb(255, 41, 41);">dans la mdl</b>`;
+    document.querySelector('.date > b').innerHTML = `Dossier à rendre le ${DATE[0]} et ${DATE[1]} ${DATE[2]} a 10h - 16h <b style="color: rgb(255, 41, 41);">dans la mdl</b>`;
 }
 
